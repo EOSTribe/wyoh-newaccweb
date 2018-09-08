@@ -5,7 +5,6 @@
     <title>EOS Tribe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato" rel="stylesheet">
 </head>
 
 <body>
@@ -42,18 +41,19 @@
             </div>
         </nav>
         <div class="container">
-            <div class="row">
-                <h1 id="headprm">Welcome to EOS Tribe!</h1>
-                <br>
-                <p id="pprm">The Building Blocks of a Decentralized Future</p>
-            </div>
             <br />
             <div class="row">
-                <button type="button" id="btnprim" class="badge badge-pill badge-primary">CREATE ACCOUNT</button>
-                <br />
-            </div>
-            <div class="row">
-                <p id="infoprm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi hendrerit, scelerisque nunc dapibus, pharetra enim. Curabitur elit felis, sagittis vitae diam ut, vestibulum auctor lectus. Proin augue felis, semper et lectus id, ullamcorper sollicitudin sapien. Nullam et volutpat neque, et consectetur leo. Nunc blandit diam nisi. Ut quis eros dolor. Aenean posuere elementum faucibus. Nunc nec dignissim tortor, et porta odio. Vivamus iaculis lacus nec purus tempor feugiat. Morbi tincidunt sapien arcu, eget fringilla lacus gravida nec. Pellentesque hendrerit volutpat bibendum. Cras quis sapien a sapien varius consequat fermentum eu urna.</p>
+                <div id="formItems" class="form-group row">
+                    <label class="col-4 col-form-label">Email:</label>
+                    <div class="col-5">
+                        <input class="form-control" type="email">
+                    </div>
+                    <label class="col-4 col-form-label">Username:</label>
+                    <div class="col-5">
+                        <input class="form-control" type="text">
+                        <button type="button" class="btn btn-primary">Random Name</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

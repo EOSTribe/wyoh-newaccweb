@@ -10,7 +10,6 @@ body {
 }
 
 #btnprim {
-    font-family: 'Catamaran', sans-serif;
     font-family: 'Lato', sans-serif;
     background-color: #e4ca1e;
     font-size: 24px;
@@ -23,4 +22,37 @@ body {
     padding-top:1.5%;
     padding-bottom:1.5%;
 	margin:auto;
+}
+#headprm {
+	color: #e4ca1e;
+	font-family: 'Catamaran', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size: 72px;
+	font-weight:800;
+}
+#pprm {
+	font-family: 'Catamaran', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size:24px;
+	padding-top:3%;
+}
+#infoprm {
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size:20px;
+	padding: 5%;
+	padding-top: 10%;
+}
+#formItems {
+	text-align:center;
+	margin:auto;
+}
+input {
+	margin:2%;
 }
