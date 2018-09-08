@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @eos_account.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @eos_account.email %>
+</p>
+
+<p>
+  <strong>Pubkey:</strong>
+  <%= @eos_account.pubkey %>
+</p>
+
+<%= link_to 'Edit', edit_eos_account_path(@eos_account) %> |
+<%= link_to 'Back', eos_accounts_path %>
