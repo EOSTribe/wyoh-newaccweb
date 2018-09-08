@@ -12,4 +12,25 @@
  *
  */
 
+$primary: #e4ca1e;
+
 @import "bootstrap";
+
+.container {
+    color: #ffffff;
+    background-color: #153040;
+    height: 100%;
+}
+body {
+    background-color: #092430;
+}
+
+#btnprim {
+    background-color: $primary;
+    font-size:32px;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    border-color: transparent;
+    color:#000000;
+}
