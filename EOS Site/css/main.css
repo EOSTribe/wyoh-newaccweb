@@ -61,3 +61,60 @@ input {
 	margin-top: 3%;
 	margin-bottom: 5%;
 }
+.warningHeader{
+	color:#ff0000;
+	margin:auto; 
+	font-weight:600;
+	font-size:50px;
+	padding-top: 8%;
+}
+.PubLabel{
+	font-size:20px;
+	padding-right: 5%;
+	text-align: center;
+}
+#pubkey{
+	font-size:28px;
+	text-align: center;
+}
+
+.warningHeader2{
+	color:#ff0000;
+	margin:auto; 
+	font-weight:600;
+	font-size:50px;
+	padding-top:6%;
+}
+#countdownBtn{
+	width:50%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin:auto; 
+	background-color: #e4ca1e;
+	color:#000000;
+	font-family: 'Lato', sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+}
+#btnPadding {
+	margin-top:5%;
+}
+#labelCol {
+	margin:auto;
+	text-align: center;
+	padding-top: 9%;
+}
+#btnCnfrm {
+	font-family: 'Lato', sans-serif;
+    background-color: #888888;
+    font-size: 24px;
+	text-align:center;
+    width: 50%;
+    height: 10%;
+    border-color: transparent;
+    color: #000000;
+    font-weight: 200;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+	margin:auto;
+}
