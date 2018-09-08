@@ -21,6 +21,19 @@ class EosAccountsController < ApplicationController
   def edit
   end
 
+def generate_username
+  num = rand(5) + 4
+  return "#{get_word(num)}#{get_word(12-num)}"
+end
+
+def get_word(word_length)
+  number = rand(2222) * (word_length + 1)
+  words = open("dictionary_#{word_length}.txt",'r')
+  words.seek(number)
+  word = words.readline.chomp
+  return word
+end
+
   # POST /eos_accounts
   # POST /eos_accounts.json
   def create
