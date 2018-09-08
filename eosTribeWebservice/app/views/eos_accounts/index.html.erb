@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Eos Accounts</h1>
+
+
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Pubkey</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @eos_accounts.each do |eos_account| %>
+      <tr>
+        <td><%= eos_account.username %></td>
+        <td><%= eos_account.email %></td>
+        <td><%= eos_account.pubkey %></td>
+        <td><%= link_to 'Show', eos_account %></td>
+        <td><%= link_to 'Edit', edit_eos_account_path(eos_account) %></td>
+        <td><%= link_to 'Destroy', eos_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> -->
+
+<br>
+
+<%= link_to 'New Eos Account', new_eos_account_path %>
