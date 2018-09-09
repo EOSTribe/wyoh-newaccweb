@@ -43,6 +43,9 @@ class EosAccountsController < ApplicationController
 
     respond_to do |format|
       if @eos_account.save
+
+        UserMailer.with(eos_account: @eos_account).welcome_email.deliver_later
+
         format.html { redirect_to @eos_account, notice: 'EOS account was successfully requested!' }
         format.json { render :show, status: :created, location: @eos_account }
       else
