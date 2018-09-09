@@ -12,7 +12,11 @@
         </div>
 
         <div class="row">
-          <span><strong>Pubkey:</strong>&nbsp;&nbsp;<%= @eos_account.pubkey %></span>
+          <span><strong>Public Key:</strong>&nbsp;&nbsp;<%= @eos_account.pubkey %></span>
+        </div>
+
+        <div class="row">
+          <span><strong>Private Key:</strong>&nbsp;&nbsp;<span id="eos_account_privkey">PlaceHolder</span></span>
         </div>
 
     </div>
@@ -20,6 +24,8 @@
 </div>
 
 <script>
+  document.getElementById('eos_account_privkey').innerHTML=localStorage.getItem("privKeyStor");
+
   $.ajax({
     type: 'POST',
     url: "http://api1.eostribe.io:3000/newaccount",

@@ -47,4 +47,17 @@
     </div>
   </div>
 
+  <script>
+    let pubKey;
+    let privKey;
+    eosjs_ecc.randomKey().then(privateKey => {
+      privKey = privateKey;
+      pubKey = eosjs_ecc.privateToPublic(privateKey);
+
+      document.getElementById('eos_account_pubkey').value = pubKey;
+
+      localStorage.setItem("privKeyStor", privKey);
+    });
+  </script>
+
 <% end %>

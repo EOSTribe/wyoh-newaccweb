@@ -6,18 +6,27 @@
 //
 //   document.getElementById('pubkey').value = pubKey;
 // });
-let pubKey;
 
-let privKey;
+// BEGIN GOOD CODE IT IS JUST COMMENTED OUT
 
-eosjs_ecc.randomKey().then(privateKey => {
-  privKey = privateKey;
-  pubKey = eosjs_ecc.privateToPublic(privateKey);
+// let pubKey;
+//
+// let privKey;
+//
+// eosjs_ecc.randomKey().then(privateKey => {
+//   privKey = privateKey;
+//   pubKey = eosjs_ecc.privateToPublic(privateKey);
+//
+//   document.getElementById('eos_account_pubkey').value = pubKey;
+//
+//   localStorage.setItem("privKey", privKey);
+//
+//   document.getElementById('eos_account_privkey').innerHTML=;
+//
+//   console.log(pubKey);
+// });
 
-  document.getElementById('eos_account_pubkey').value = pubKey;
-
-  console.log(pubKey);
-});
+// END GOOD CODE IT IS JUST COMMENTED OUT
 
 // eosjs_ecc.randomKey().then(privateKey => {
 //   keyPair = privateKey + "|" + eosjs_ecc.privateToPublic(privateKey); // wif|EOSkey
