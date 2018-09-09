@@ -32,6 +32,15 @@ body {
 	font-size: 72px;
 	font-weight:800;
 }
+#headprm2 {
+	color: #e4ca1e;
+	font-family: 'Catamaran', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size: 54px;
+	font-weight:800;
+}
 #pprm {
 	font-family: 'Catamaran', sans-serif;
 	text-align:center;
@@ -116,5 +125,8 @@ input {
     font-weight: 200;
     padding-top:1.5%;
     padding-bottom:1.5%;
+	margin:auto;
+}
+.center {
 	margin:auto;
 }
