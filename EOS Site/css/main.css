@@ -18,7 +18,7 @@ body {
     height: 10%;
     border-color: transparent;
     color: #000000;
-    font-weight: 500;
+    font-weight: 200;
     padding-top:1.5%;
     padding-bottom:1.5%;
 	margin:auto;
@@ -30,6 +30,15 @@ body {
 	margin:center;
 	width:100%;
 	font-size: 72px;
+	font-weight:800;
+}
+#headprm2 {
+	color: #e4ca1e;
+	font-family: 'Catamaran', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size: 54px;
 	font-weight:800;
 }
 #pprm {
@@ -49,10 +58,75 @@ body {
 	padding: 5%;
 	padding-top: 10%;
 }
-#formItems {
+.form-group row {
 	text-align:center;
 	margin:auto;
+	align-items: center;
 }
 input {
 	margin:2%;
+}
+#acclinebreak{
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+.warningHeader{
+	color:#ff0000;
+	margin:auto; 
+	font-weight:600;
+	font-size:50px;
+	padding-top: 8%;
+}
+.PrivLabel{
+	font-size:20px;
+	padding-right: 5%;
+	text-align: center;
+}
+#privkey{
+	font-size:28px;
+	text-align: center;
+}
+
+.warningHeader2{
+	color:#ff0000;
+	margin:auto; 
+	font-weight:600;
+	font-size:50px;
+	padding-top:6%;
+}
+#countdownBtn{
+	width:50%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin:auto; 
+	background-color: #e4ca1e;
+	color:#000000;
+	font-family: 'Lato', sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+}
+#btnPadding {
+	margin-top:5%;
+}
+#labelCol {
+	margin:auto;
+	text-align: center;
+	padding-top: 9%;
+}
+#btnCnfrm {
+	font-family: 'Lato', sans-serif;
+    background-color: #888888;
+    font-size: 24px;
+	text-align:center;
+    width: 50%;
+    height: 10%;
+    border-color: transparent;
+    color: #000000;
+    font-weight: 200;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+	margin:auto;
+}
+.center {
+	margin:auto;
 }
