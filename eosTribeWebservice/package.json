@@ -1,5 +1,40 @@
 {
-  "name": "eosTribeWebservice",
+  "name": "eostribeeasyaccount",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "eosjs": "^16.0.6",
+    "eosjs-ecc": "^4.0.4",
+    "modernizr": "3.6.0"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WyoHackathon 2018 Pirates",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EOSTribe/wyoh-newaccweb.git"
+  },
+  "keywords": [
+    "eos",
+    "cryptocurrency",
+    "blockchain",
+    "smart",
+    "contract"
+  ],
+  "bugs": {
+    "url": "https://github.com/EOSTribe/wyoh-newaccweb/issues"
+  },
+  "homepage": "https://github.com/EOSTribe/wyoh-newaccweb#readme",
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
 }

@@ -1,5 +1,11 @@
-<h1>New Eos Account</h1>
+<div class="container">
+  <div class="d-flex justify-content-center row">
+    <div class="col">
+      <h1 class="headprm">Create your Account</h1>
+    </div>
+  </div>
 
-<%= render 'form', eos_account: @eos_account %>
+  <%= render 'form', eos_account: @eos_account %>
+</div>
 
-<%= link_to 'Back', eos_accounts_path %>
+<%= link_to 'BACK', eos_accounts_path, class: "btn btn-secondary" %>

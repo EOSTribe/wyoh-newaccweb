@@ -15,5 +15,8 @@ module EosTribeWebservice
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    #
+    # This lets you use npm modules in your Sprockets assets. In
+    config.assets.paths << Rails.root.join('node_modules')
   end
 end

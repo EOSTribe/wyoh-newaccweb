@@ -1,6 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
+  <span id="notice"><%= notice %></span>
 
+  <div class="row">
+    <div class="col">
+      <h1 class="headprm">Welcome to EOS Tribe!</h1>
+    </div>
+    <span id="pprm">The Building Blocks of a Decentralized Future</span>
+  </div>
+  <br />
+
+  <div class="row">
+    <%= link_to 'CREATE ACCOUNT', new_eos_account_path, id: "btnprim", class: "badge badge-pill badge-primary" %>
+    <br />
+  </div>
+
+  <div class="row">
+    <p id="infoprm">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id mi hendrerit, scelerisque nunc dapibus, pharetra enim. Curabitur elit felis, sagittis vitae diam ut, vestibulum auctor lectus. Proin augue felis, semper et lectus id, ullamcorper sollicitudin sapien. Nullam et volutpat neque, et consectetur leo. Nunc blandit diam nisi. Ut quis eros dolor. Aenean posuere elementum faucibus. Nunc nec dignissim tortor, et porta odio. Vivamus iaculis lacus nec purus tempor feugiat. Morbi tincidunt sapien arcu, eget fringilla lacus gravida nec. Pellentesque hendrerit volutpat bibendum. Cras quis sapien a sapien varius consequat fermentum eu urna.
+    </p>
+  </div>
+
+</div>
 
 <!-- <table>
   <thead>
@@ -27,5 +48,3 @@
 </table> -->
 
 <br>
-
-<%= link_to 'New Eos Account', new_eos_account_path %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EOS Tribe · EasyAccount</title>
+    <title>EOS Tribe - EasyAccount</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,49 +13,26 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <%= link_to raw('<div id="logo"></div>'), "http://eostribe.io", class: 'nav-link' %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <%= link_to "Home", root_path, class: 'nav-link' %>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Log In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vision</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Values</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tech-Specs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">EOS Projects</a>
+          <li class="nav-item ml-auto">
+            <%= link_to "Create Account", new_eos_account_path, class: 'nav-link' %>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class="container-fluid">
-
-      <div class="row">
-        <div class="col-12">
-          <%= yield %>
-        </div>
-      </div>
-
+      <%= yield %>
     </div>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/eosjs@16.0.6/lib/eos.min.js" integrity="sha512-IS9vyI+sMK7MYNJgHj9G8Li21QYs59sRW/Nyzi+dKUh6bF6OfpOnvzSCTiegWftY1ozOmmyacCH2QIJpZgbuKw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/eosjs-ecc@4.0.4/lib/eosjs-ecc.min.js" integrity="sha512-dYFDmK/d9r3/NCp6toLtfkwOjSMRBaEzaGAx1tfRItC0nsI0hVLERk05iNBQR7uDNI7ludYhcBI4vUiFHdjsTQ==" crossorigin="anonymous"></script>
   </body>
 </html>

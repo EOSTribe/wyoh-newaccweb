@@ -1,0 +1,82 @@
+
+$warning: #e4ca1e;
+
+@import "bootstrap";
+
+body {
+  background-color: #092430;
+}
+
+h1{
+  color: $warning;
+	font-family: 'Catamaran', sans-serif;
+	text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.container {
+  // border-right: 2px solid black;
+  // border-left: 2px solid black;
+  color: #ffffff;
+  background-color: #153040;
+  height: 100vh;
+}
+
+.headprm{
+	margin: 1rem 0;
+	width: 100%;
+}
+
+#btnprim {
+  font-family: 'Lato', sans-serif;
+  background-color: $warning;
+  font-size: 24px;
+	text-align:center;
+  width: 25%;
+  height: 10%;
+  border-color: transparent;
+  color: #000000;
+  font-weight: 500;
+  padding-top:1.5%;
+  padding-bottom:1.5%;
+	margin: auto;
+}
+
+
+
+#logo{
+  height: 50px;
+  width: 217px;
+  background-image: url(<%= image_url "eos-tribe-side-by-side.svg" %>);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#pprm {
+	font-family: 'Catamaran', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size:24px;
+	padding-top:3%;
+}
+
+#infoprm {
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size:20px;
+	padding: 5%;
+	padding-top: 10%;
+}
+
+#formItems {
+	text-align:center;
+	margin:auto;
+}
+
+input {
+	margin:2%;
+}
