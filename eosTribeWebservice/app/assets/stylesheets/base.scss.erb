@@ -4,7 +4,9 @@ $warning: #e4ca1e;
 @import "bootstrap";
 
 body {
-  background-color: #092430;
+  background-image: url(<%= image_url "starry-background.jpg" %>);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1{
@@ -15,12 +17,33 @@ h1{
   font-weight: 800;
 }
 
+label{
+  color: #ffffff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+p{
+  color: #ffffff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+span{
+  color: #ffffff;
+  font-family: 'Catamaran', sans-serif;
+}
+
 .container {
   // border-right: 2px solid black;
   // border-left: 2px solid black;
-  color: #ffffff;
-  background-color: #153040;
+  // color: #ffffff;
+  background-color: rgba(21,48,64,0.8);
+  background-blend-mode: lighten;
   height: 100vh;
+}
+
+.credit{
+  color: #888888;
+  font-size: .3rem;
 }
 
 .headprm{
@@ -43,18 +66,16 @@ h1{
 	margin: auto;
 }
 
-
-
 #logo{
-  height: 50px;
-  width: 217px;
+  height: 40px;
+  width: 175px;
   background-image: url(<%= image_url "eos-tribe-side-by-side.svg" %>);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #pprm {
-	font-family: 'Catamaran', sans-serif;
+
 	text-align:center;
 	margin:center;
 	width:100%;

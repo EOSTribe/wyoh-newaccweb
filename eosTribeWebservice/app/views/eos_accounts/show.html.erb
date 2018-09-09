@@ -1,19 +1,32 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="d-flex justify-content-center row">
+    <div class="col">
+      <h1 class="headprm"></h1>
+      <p id="notice"><%= notice %></p>
+        <div class="row">
+         <span><strong>Username:</strong></span>&nbsp;&nbsp;<%= @eos_account.username %>
+        </div>
 
-<p>
-  <strong>Username:</strong>
-  <%= @eos_account.username %>
-</p>
+        <div class="row">
+          <span><strong>Email:</strong>&nbsp;&nbsp;<%= @eos_account.email %></span>
+        </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @eos_account.email %>
-</p>
+      <p>
 
-<p>
-  <strong>Pubkey:</strong>
-  <%= @eos_account.pubkey %>
-</p>
+      </p>
+
+      <p>
+        <strong>Pubkey:</strong>
+        <%= @eos_account.pubkey %>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
 
 <%= link_to 'Edit', edit_eos_account_path(@eos_account) %> |
 <%= link_to 'Back', eos_accounts_path %>

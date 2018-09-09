@@ -29,12 +29,13 @@
           </div>
           <div class="col-5">
             <%= form.text_field :username, class: "form-control", type: "text" %>
-            <!-- <input class="form-control" type="text"> -->
           </div>
           <div class="col-2 d-flex align-items-center">
             <span id="usernameGen" class="btn btn-primary">RANDOM&nbsp;USERNAME</span>
           </div>
         </div>
+
+        <input type="hidden" name="pubkey" id="pubkey" value=1>
 
         <div class="form-group row d-flex justify-content-center">
           <div class="actions">
@@ -45,5 +46,10 @@
       </div>
     </div>
   </div>
+
+  <script>
+    getPublicKey();
+    document.getElementById('gadget_url').value = publicKey;
+  </script>
 
 <% end %>

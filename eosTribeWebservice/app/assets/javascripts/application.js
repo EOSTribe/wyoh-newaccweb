@@ -16,5 +16,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
-//= require onmount/onmount
+//= require eosjs-ecc
+//= require eosKeyGen
+//= require qrCodeGen
 //= require_tree .
