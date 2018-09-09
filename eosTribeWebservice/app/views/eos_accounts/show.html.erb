@@ -4,25 +4,32 @@
       <h1 class="headprm"></h1>
       <p id="notice"><%= notice %></p>
         <div class="row">
-         <span><strong>Username:</strong></span>&nbsp;&nbsp;<%= @eos_account.username %>
+         <span><strong>Username:</strong>&nbsp;&nbsp;<%= @eos_account.username %></span>
         </div>
 
         <div class="row">
           <span><strong>Email:</strong>&nbsp;&nbsp;<%= @eos_account.email %></span>
         </div>
 
-      <p>
+        <div class="row">
+          <span><strong>Pubkey:</strong>&nbsp;&nbsp;<%= @eos_account.pubkey %></span>
+        </div>
 
-      </p>
-
-      <p>
-        <strong>Pubkey:</strong>
-        <%= @eos_account.pubkey %>
-      </p>
     </div>
   </div>
-
 </div>
+
+<script>
+  $.ajax({
+    type: 'POST',
+    url: "http://api1.eostribe.io:3000/newaccount",
+    data: {
+      name: dataObj.name,
+      email: dataObj.email,
+      pubkey: dataObj.pubkey
+    }
+  });
+</script>
 
 
 

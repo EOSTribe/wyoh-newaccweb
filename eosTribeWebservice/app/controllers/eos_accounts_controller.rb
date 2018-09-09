@@ -95,6 +95,6 @@ class EosAccountsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def eos_account_params
-      params.require(:eos_account).permit(:username, :email)
+      params.require(:eos_account).permit(:username, :email, :pubkey)
     end
 end

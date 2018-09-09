@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <input type="hidden" name="pubkey" id="pubkey" value=1>
+        <%= hidden_field_tag("eos_account[pubkey]", "5", {name: "eos_account[pubkey]"}) %>
 
         <div class="form-group row d-flex justify-content-center">
           <div class="actions">
@@ -46,10 +46,5 @@
       </div>
     </div>
   </div>
-
-  <script>
-    getPublicKey();
-    document.getElementById('gadget_url').value = publicKey;
-  </script>
 
 <% end %>

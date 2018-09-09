@@ -4,4 +4,5 @@ class EosAccount < ApplicationRecord
   # Meets the 12-character long username requirement
   validates :username, presence: true, uniqueness: true, length: {is: 12}
   validates :email, presence: true
+  validates :pubkey, presence: true
 end
