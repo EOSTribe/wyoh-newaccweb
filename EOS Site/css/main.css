@@ -68,12 +68,12 @@ input {
 	font-size:50px;
 	padding-top: 8%;
 }
-.PubLabel{
+.PrivLabel{
 	font-size:20px;
 	padding-right: 5%;
 	text-align: center;
 }
-#pubkey{
+#privkey{
 	font-size:28px;
 	text-align: center;
 }
