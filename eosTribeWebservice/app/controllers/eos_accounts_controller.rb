@@ -1,7 +1,5 @@
 class EosAccountsController < ApplicationController
   before_action :set_eos_account, only: [:show, :edit, :update, :destroy]
-  # before_action :get_key_pair, only: [:create]
-  # before_action :jeff_sessions, only: [:create]
 
   # GET /eos_accounts
   # GET /eos_accounts.json
@@ -40,6 +38,7 @@ class EosAccountsController < ApplicationController
   # POST /eos_accounts.json
   def create
     @eos_account = EosAccount.new(eos_account_params)
+    eos_account_params[:username].downcase
 
     respond_to do |format|
       if @eos_account.save
@@ -84,17 +83,6 @@ class EosAccountsController < ApplicationController
     def set_eos_account
       @eos_account = EosAccount.find(params[:id])
     end
-
-    def jeff_sessions
-      @test_sessions = "WELCOME TO THE THUNDERDOME"
-    end
-
-    # def get_key_pair
-    #   key_pair = `node app/assets/javascripts/eosKeyGen.js`.chomp
-    #   delim_index = key_pair.index("|")
-    #   @priv_key = key_pair[0,delim_index]
-    #   @pub_key = key_pair[delim_index + 1, key_pair.length]
-    # end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def eos_account_params
