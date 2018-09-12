@@ -1,0 +1,103 @@
+
+$warning: #e4ca1e;
+
+@import "bootstrap";
+
+body {
+  background-image: url(<%= image_url "starry-background.jpg" %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: $warning;
+	font-family: 'Catamaran', sans-serif;
+	text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+label{
+  color: #ffffff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+p{
+  color: #ffffff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+span{
+  color: #ffffff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.container {
+  // border-right: 2px solid black;
+  // border-left: 2px solid black;
+  // color: #ffffff;
+  background-color: rgba(21,48,64,0.8);
+  background-blend-mode: lighten;
+  height: 100vh;
+}
+
+.credit{
+  color: #888888;
+  font-size: .3rem;
+}
+
+.headprm{
+	margin: 1rem 0;
+	width: 100%;
+}
+
+#btnprim {
+  font-family: 'Lato', sans-serif;
+  background-color: $warning;
+  font-size: 24px;
+	text-align:center;
+  width: 25%;
+  height: 10%;
+  border-color: transparent;
+  color: #000000;
+  font-weight: 500;
+  padding-top:1.5%;
+  padding-bottom:1.5%;
+	margin: auto;
+}
+
+#logo{
+  height: 40px;
+  width: 175px;
+  background-image: url(<%= image_url "eos-tribe-side-by-side.svg" %>);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#pprm {
+
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size:24px;
+	padding-top:3%;
+}
+
+#infoprm {
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+	margin:center;
+	width:100%;
+	font-size:20px;
+	padding: 5%;
+	padding-top: 10%;
+}
+
+#formItems {
+	text-align:center;
+	margin:auto;
+}
+
+input {
+	margin:2%;
+}
