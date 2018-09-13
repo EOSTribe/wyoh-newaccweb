@@ -1,7 +1,20 @@
 
-$warning: #e4ca1e;
+$primary: #e4ca1e;
 
 @import "bootstrap";
+
+
+// Tags
+
+a{
+  color: #009765;
+  transition-duration: 0.3s;
+}
+a:hover{
+  color: #dddddd;
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
 
 body {
   background-image: url(<%= image_url "starry-background.jpg" %>);
@@ -10,11 +23,15 @@ body {
 }
 
 h1{
-  color: $warning;
+  color: $primary;
 	font-family: 'Catamaran', sans-serif;
 	text-align: center;
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+input {
+	margin:2%;
 }
 
 label{
@@ -25,12 +42,20 @@ label{
 p{
   color: #ffffff;
   font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 25px 0px;
+  text-align: left;
+  line-height: 27px;
 }
 
 span{
   color: #ffffff;
   font-family: 'Catamaran', sans-serif;
 }
+
+
+// Classes
 
 .container {
   // border-right: 2px solid black;
@@ -49,6 +74,18 @@ span{
 .headprm{
 	margin: 1rem 0;
 	width: 100%;
+}
+
+// ID's
+
+#error_explanation{
+  background-color: #9f0000;
+  padding: 10px;
+  border-radius: 3px;
+  p, ul > li{
+    color: #ffffff;
+    font-family: 'Catamaran', sans-serif;
+  }
 }
 
 #btnprim {
@@ -83,21 +120,7 @@ span{
 	padding-top:3%;
 }
 
-#infoprm {
-	font-family: 'Lato', sans-serif;
-	text-align:center;
-	margin:center;
-	width:100%;
-	font-size:20px;
-	padding: 5%;
-	padding-top: 10%;
-}
-
 #formItems {
 	text-align:center;
 	margin:auto;
-}
-
-input {
-	margin:2%;
 }

@@ -1,11 +1,11 @@
 <%= form_with(model: eos_account, local: true) do |form| %>
   <% if eos_account.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(eos_account.errors.count, "error") %> prohibited this eos_account from being saved:</h2>
+      <p><%= pluralize(eos_account.errors.count.humanize, "error".upcase) %> PROHIBITED THIS ACCOUNT FROM BEING REQUESTED:</h2>
 
       <ul>
       <% eos_account.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <li><%= message.upcase %></li>
       <% end %>
       </ul>
     </div>
